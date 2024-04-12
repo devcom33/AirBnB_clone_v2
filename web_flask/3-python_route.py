@@ -24,11 +24,10 @@ def c_is_fun(text):
     return "C" + " " + text.replace("_", " ")
 
 
-@app.route("/python/<text>", strict_slashes=False)
-def c_is_fun(text = "is cool"):
+@app.route("/python/<text>")
+def python_is_cool(text="is cool"):
     """ A function that return python """
     return "Python" + " " + text.replace("_", " ")
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
