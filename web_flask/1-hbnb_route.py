@@ -11,6 +11,7 @@ def hello():
     """ A function that return Hello HBNB """
     return "Hello HBNB!"
 
+
 @app.route("/hbnb")
 def hbnb():
     """ A function that return HBNB """
