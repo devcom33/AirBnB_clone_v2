@@ -30,6 +30,7 @@ def python_is_cool(text):
     """ A function that return python """
     return "Python" + " " + text.replace("_", " ")
 
+
 @app.route("/number/<int:n>", strict_slashes=False)
 def is_num(n=0):
     """ A function that return numbers """
