@@ -47,11 +47,11 @@ def temp_num(n):
 def odd_or_even(n):
     """ Return Odd or Even """
     if n % 2 == 0:
-        n = str(n) + " is even"
-	return render_template("6-number_odd_or_even.html", n = n)
+        even = str(n) + " is even"
+        return render_template("6-number_odd_or_even.html", n=even)
     if n % 2 != 0:
-        n = str(n) + " is odd"
-	return render_template("6-number_odd_or_even.html", n = n)
+        odd = str(n) + " is odd"
+        return render_template("6-number_odd_or_even.html", n=odd)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
